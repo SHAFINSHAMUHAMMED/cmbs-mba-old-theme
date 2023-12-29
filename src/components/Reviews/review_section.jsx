@@ -405,7 +405,7 @@ function ReviewSection() {
               <p className="">
                 I always wanted to do an DBA from the Institute which offers
                 online education but with good quality. I done my DBA in Supply
-                chain management from SSM with the help of Learner University
+                chain management from CMBS with the help of Learner University
                 College Dubai.The DBA in Supply chain management from Swiss
                 School of Management and the services provided by Learners were
                 well suited according to my need. The Fees is also good and the

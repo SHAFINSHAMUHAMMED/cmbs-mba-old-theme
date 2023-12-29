@@ -33,9 +33,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  background-image: url('../../assets/hero-bg.webp');
+  background-image: url('../../assets/svg/hero-background.svg');
   background-position:  bottom right;
-  background-position-y:150px ;
+  background-position-x: 550px;
+  background-position-y:360px ;
   background-repeat: no-repeat;
 }
 

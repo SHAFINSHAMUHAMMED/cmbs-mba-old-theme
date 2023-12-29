@@ -77,8 +77,6 @@ function hero() {
             <div className="flex gap-2 items-center justify-center text-[15px] sm:text-[25px] mt-[15px] md:mt-[20px] mb-0 sm:mb-5">
               <a
                 onClick={togglePopup}
-                // href="\images\SSM MBA.pdf"
-                // download
                 className="flex gap-2 items-center"
                 style={{ cursor: "pointer" }}
               >

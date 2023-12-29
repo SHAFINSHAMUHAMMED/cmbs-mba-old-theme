@@ -20,12 +20,15 @@
   width: 291px;
   height: 247px;
   padding: 0px 20px 0px 20px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 .carousel-card:hover {
   border-radius: 40px;
 border: 1px solid #FFF;
 background: #0C93A7;
 box-shadow: 0px 18px 41.8px 0px rgba(0, 156, 179, 0.33);
+transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+transform: scale(1.03);
 }
 .carousel-card:hover .carousel-svg circle {
   fill: rgba(255, 255, 255, 0.50);
@@ -34,11 +37,14 @@ box-shadow: 0px 18px 41.8px 0px rgba(0, 156, 179, 0.33);
   fill: white;
 }
 
+.carousel-card:hover h4 {
+  transition: color 0.3s ease;
+}
 .carousel h4 {
   font-family: 'SK Modernist Bold';;
   font-size: 22px;
 }
-.carousel h4:hover {
+.carousel-card:hover h4 {
 color: #FFF;
 
 }
@@ -52,7 +58,6 @@ color: #FFF;
     max-width: 95%;
     margin: 0px 20px 0px 20px;
     margin: auto;
-    /* transform: translateY(-55px); */
     margin-top: -20px;
     background: white;
     border-radius: 20px;
@@ -69,23 +74,25 @@ color: #FFF;
     text-align: center;
     padding: 25px 50px 15px 50px;
     width: 250px;
+    transition: none;
   }
   .carousel-card:hover {
-    border: none; /* Unset border or set it to initial style */
-    background: transparent; /* Revert to initial background */
-    box-shadow: none; /* Remove shadow */
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
   }
 
   .carousel-card:hover .carousel-svg circle {
-    fill: inherit; /* Revert to the initial fill color */
+    fill: inherit;
   }
 
   .carousel-card:hover .carousel-svg path {
-    fill: inherit; /* Revert to the initial fill color */
+    fill: inherit; 
   }
 
   .carousel h4:hover {
-    color: inherit; /* Revert to initial text color */
+    color: inherit;
   }
   .carousel .react-multi-carousel-item {
     display: flex;

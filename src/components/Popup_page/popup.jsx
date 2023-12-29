@@ -111,7 +111,6 @@ function popup({ closePopup }) {
         );
 
         if (response.ok) {
-          // downloadPdf("images/SSM MBA.pdf");
           clearTimeout(loaderTimeout);
           setIsLoading(false);
           setDownloadStarted(true);
@@ -155,7 +154,7 @@ function popup({ closePopup }) {
         </svg>
         {!downloadStarted ? (
           <div>
-            <h1>Get Instant Access To The SSM DBA Brochure</h1>
+            <h1>Get Instant Access To The CMBS MBA Brochure</h1>
             <p className="popup-main-description">
               Get an inside look at our prestigious programs, faculty, and the
               unique benefits that set us apart in the business education

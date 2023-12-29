@@ -398,7 +398,7 @@ function world_of_possibilities() {
         <div className="world-of-possibilities-brochure-left">
           <h1>
             Get Instant Access To &nbsp;
-            <span className="wavy-underline-green">The</span><span className="wavy-underline-green"> SSM MBA</span> <span className="wavy-underline-green">Brochure</span>
+            <span className="wavy-underline-green">The</span><span className="wavy-underline-green"> CMBS MBA</span> <span className="wavy-underline-green">Brochure</span>
           </h1>
           <p>
             Get an inside look at our prestigious programs, faculty, and the

@@ -30,20 +30,20 @@ function App() {
   const { isPopupOpen, togglePopup } = usePopup();
   const [exitIntentTriggered, setExitIntentTriggered] = useState(false);
 
-  // useEffect(() => {
-  //   const handleMouseMove = debounce((e) => {
-  //     if (e.clientY <= 50 && !isPopupOpen && !exitIntentTriggered) {
-  //       setExitIntentTriggered(true);
-  //       togglePopup();
-  //     }
-  //   }, 100);
-  //   document.addEventListener("mousemove", handleMouseMove);
+  useEffect(() => {
+    const handleMouseMove = debounce((e) => {
+      if (e.clientY <= 50 && !isPopupOpen && !exitIntentTriggered) {
+        setExitIntentTriggered(true);
+        togglePopup();
+      }
+    }, 100);
+    document.addEventListener("mousemove", handleMouseMove);
 
-  //   return () => {
-  //     document.removeEventListener("mousemove", handleMouseMove);
-  //     handleMouseMove.cancel();
-  //   };
-  // }, [togglePopup, isPopupOpen, exitIntentTriggered]);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      handleMouseMove.cancel();
+    };
+  }, [togglePopup, isPopupOpen, exitIntentTriggered]);
 
   const handleClosePopup = () => {
     togglePopup();
@@ -83,7 +83,7 @@ function App() {
     <StepsToUnlockCareer/>
     <StudentSupport/>
     <IcfCertification/>
-    {/* <Footer/> */}
+    <Footer/>
     {isPopupOpen && <Popup closePopup={handleClosePopup} />}
         </div>
       </Suspense>

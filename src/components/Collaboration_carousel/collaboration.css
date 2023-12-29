@@ -148,6 +148,7 @@
     }
   
     .collab-card-img {
+      object-fit: contain;
       width: 87px;
       height: 51px;
     }

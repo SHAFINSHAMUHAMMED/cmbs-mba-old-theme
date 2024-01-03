@@ -7,7 +7,7 @@ import './App.css';
 // Lazy loading components
 const Header = React.lazy(() => import('./components/Header/header'));
 const Hero = React.lazy(() => import('./components/Hero/hero'));
-const SwissSchool = React.lazy(() => import('./components/why-cmbs/cmbs'))
+const WhyCmbs = React.lazy(() => import('./components/why-cmbs/cmbs'))
 const TheoryIntegration = React.lazy(() => import('./components/Therory_integration/theory_integration'))
 const Carousel = React.lazy(() => import('./components/Carousel/ResponsiveCarousel'));
 const OurMba = React.lazy(() => import('./components/Our_mba_program/our_mba'))
@@ -70,7 +70,7 @@ function App() {
     <Header/>
     <Hero/>
     <CollaborationCarousel/>
-    <SwissSchool/>
+    <WhyCmbs/>
     <WhatsappStickyLogo/>
     <TheoryIntegration/>
     <Carousel/>

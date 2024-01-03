@@ -7,6 +7,22 @@ import { usePopup } from "../Hoocks/PopupContext";
 
 function swiss_school() {
   const { isPopupOpen } = usePopup();
+
+  useEffect(() => {
+    // Function for adjust lottie boxshadow issue
+    const adjustFilterSize = (elementId) => {
+      const filterElement = document.getElementById(elementId);
+      if (filterElement) {
+        filterElement.setAttribute('x', '-50%');
+        filterElement.setAttribute('y', '-50%');
+        filterElement.setAttribute('width', '200%');
+        filterElement.setAttribute('height', '200%');
+      }
+    };
+    adjustFilterSize('__lottie_element_881');
+    adjustFilterSize('__lottie_element_1293');
+  }, []);
+  
   return (
     <div className={`why-cmbs ${isPopupOpen ? "blur-effect" : ""}`}>
       <h2 className=" cmbs-h2 main-head-h2">

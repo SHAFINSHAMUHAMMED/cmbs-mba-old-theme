@@ -153,7 +153,8 @@
 .hero-section {
   background-image: url('../../assets/hero-bg.webp');
   background-position:  bottom;
-  background-position-y:630px ;
+  background-position-y:900px ;
+  background-position-x: 100px;
   background-size: contain;
 }
 

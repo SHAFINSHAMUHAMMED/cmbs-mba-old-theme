@@ -69,6 +69,9 @@ function collaboration_carousel() {
               <div class="collab-card">
                 <img className="collab-card-img" src={emiratesNBD} alt="" />
               </div>
+              <div class="collab-card">
+                <img className="collab-card-img" src={almarai} alt="" />
+              </div>
               {/* <div class="collab-card">
                 <img className="collab-card-img" src={standard_chartered} alt="" />
               </div>
@@ -79,6 +82,9 @@ function collaboration_carousel() {
           </Marquee>
           <Marquee direction="right" pauseOnClick="true">
             <div class="collab-cards">
+            <div class="collab-card">
+                <img className="collab-card-img" src={almarai} alt="" />
+              </div>
               <div class="collab-card">
                 <img className="collab-card-img" src={unilever} alt="" />
               </div>

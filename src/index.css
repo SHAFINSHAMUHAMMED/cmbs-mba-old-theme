@@ -247,6 +247,22 @@ button {
   position: relative;
   text-decoration: none;
 }
+.wavy-underline-violet {
+  position: relative;
+  display: inline;
+}
+
+.wavy-underline-violet::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url('./assets/svg/wawyUnderlineViolet.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 .blur-effect {
   filter: opacity(.3);
 }

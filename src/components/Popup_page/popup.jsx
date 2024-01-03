@@ -212,7 +212,7 @@ function popup({ closePopup }) {
                   type="submit"
                   disabled={!isFormComplete}
                   style={{
-                    backgroundColor: isFormComplete ? "#259D4A" : "#cccccc",
+                    backgroundColor: isFormComplete ? "#CC39D3" : "#cccccc",
                     color: isFormComplete ? "white" : "grey",
                     cursor: isFormComplete ? "pointer" : "not-allowed",
                     // other styles

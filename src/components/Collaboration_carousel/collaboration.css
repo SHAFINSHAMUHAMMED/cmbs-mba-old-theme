@@ -97,8 +97,9 @@
     }
   
     .collab-card-img {
-      width: 100px;
-      height: 70px;
+      width: 150px;
+      height: 100px;
+      object-fit: contain;
     }
   
     .collab-cards .collab-card:first-child {
@@ -149,8 +150,8 @@
   
     .collab-card-img {
       object-fit: contain;
-      width: 87px;
-      height: 51px;
+      width: 100px;
+      height: 70px;
     }
   
     .collab-cards .collab-card:first-child {

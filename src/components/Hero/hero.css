@@ -132,6 +132,20 @@
   overflow: hidden;
 
 }
+.wavy-orange1 {
+  background-image: url('../../assets/wawyOrange1.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 5px;
+}
+.wavy {
+  background-image: url('../../assets/wawy.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: 1px;
+  padding-bottom: 10px;
+
+}
 
 @media only screen and (max-width: 1180px) {
 /* //////////////// */

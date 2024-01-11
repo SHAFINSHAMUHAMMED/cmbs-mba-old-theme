@@ -68,7 +68,7 @@ function hero() {
         {/* <img className="hero-global-map" src={globalMap} alt="" /> */}
         <div className="hero-sub">
           <div className="hero-left">
-          <h1 className="hero-headline">Become the <span className="wavy-underline-orange2">Top Pick:</span> Our <span className="text-[#259D4A]">European MBA</span> is <span className="wavy-underline-orange2">Your Gateway</span> to Elite Opportunities</h1>
+          <h1 className="hero-headline">Become the <span className="wavy-orange1">Top Pick:</span> Our <span className="text-[#259D4A]">European MBA</span> is <span className="">Your Gateway</span> to <br /> <span className="wavy text-[#EF8F36]">High-Paying Careers</span></h1>
 
             <p className="">
             Dive into our prestigious European MBA program, where you'll gain the cutting-edge skills and knowledge to lead tomorrow's industries. Connect with top-tier faculty and global peers in an immersive environment designed for ambitious professionals.

@@ -80,7 +80,7 @@ function App() {
     <WorldOfPossibilities/>
     <ReviewSection/>
     <SuccessfulGraduates/>
-    <StepsToUnlockCareer/>
+    {/* <StepsToUnlockCareer/> */}
     <StudentSupport/>
     <IcfCertification/>
     <Footer/>

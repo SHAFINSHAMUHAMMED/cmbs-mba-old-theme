@@ -5,7 +5,7 @@ import { Link, Element } from "react-scroll";
 import ourMba from "../../assets/our-mba.webp";
 function from_writing() {
   return (
-    <div className="our-mba-main">
+    <div id="our-mba" className="our-mba-main">
       <div className="our-mba-inner">
         <div className=" our-mba-inner-1">
           <h2 className="main-head-h2">

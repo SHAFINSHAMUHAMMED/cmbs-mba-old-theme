@@ -475,7 +475,7 @@
         display: block;
         position: absolute;
         height: 313px;
-        top: 0;
+        top: 10px;
         right: 0;
         z-index: -1;
 

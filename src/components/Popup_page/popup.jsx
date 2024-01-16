@@ -100,7 +100,7 @@ function popup({ closePopup }) {
 
       try {
         const response = await fetch(
-          "https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjUwNTY5MDYzNzA0M2M1MjY0NTUzZDUxMzci_pc",
+          "https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjUwNTY5MDYzZTA0MzA1MjZmNTUzNTUxMzUi_pc",
           {
             method: "POST",
             headers: {
@@ -136,7 +136,7 @@ function popup({ closePopup }) {
       unmountOnExit
       onExit={handleExit}
     >
-      <div className={`popup-main`}>
+      <div className={`popup-main overflow-hidden`}>
         <svg
           className="popup-close-button cursor-pointer"
           onClick={handleExit}

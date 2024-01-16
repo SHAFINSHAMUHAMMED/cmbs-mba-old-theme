@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 15px;
 
   }
 
@@ -83,6 +84,34 @@
 .power-skill-card-img {
   width: 329px;
   height: auto;
+}
+.power-skill-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+  width: 142px;
+  height: 36.544px;
+  padding-right: 5px;
+  flex-shrink: 0;
+  border-radius: 33.412px;
+  border: 1.044px solid #259D4A;
+  cursor: pointer;
+  color: #0B434B;
+  font-family: 'SK Modernist Bold';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 136%;
+}
+.power-skill-button:hover .pow-svg-icon .svg-path {
+  fill: #ffff;
+}
+
+.power-skill-button:hover .svg-circle {
+  fill: #EE9B4E;
+  fill-opacity: 1;
 }
 
 @media only screen and (max-width: 1180px) {

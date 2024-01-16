@@ -24,7 +24,7 @@ function swiss_school() {
   }, []);
   
   return (
-    <div className={`why-cmbs ${isPopupOpen ? "blur-effect" : ""}`}>
+    <div id="why-cmbs" className={`why-cmbs ${isPopupOpen ? "blur-effect" : ""}`}>
       <h2 className=" cmbs-h2 main-head-h2">
       <span className="wavy-underline-green">Why Choose </span>Central Mediterranean Business School (<span className="text-[#259D4A]">CMBS</span>)?
       </h2>

@@ -9,7 +9,7 @@ import student_support2 from "../../assets/student-support-mob.webp";
 
 function student_support() {
   return (
-    <div className="student-support-main">
+    <div id="guarantee" className="student-support-main">
       <div className="student-support-sub">
         <img className="student-support-img-1" src={student_support1} alt="" />
         <img className="student-support-img-2" src={student_support2} alt="" />

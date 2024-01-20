@@ -3,6 +3,7 @@ import './acredition.css'
 import ButtonDark from "../Buttons/buttonDark";
 import Marquee from "react-fast-marquee";
 import Claim_description from "../Description/claim_description";
+import { usePopup } from "../Hoocks/PopupContext";
 
 import iao1 from "../../assets/svg/Accredit-iao-1-icon.svg";
 import iao from "../../assets/svg/Accredit-iao-icon.svg";
@@ -12,8 +13,11 @@ import businet from "../../assets/svg/Accredit-businet-icon.svg";
 import chea from "../../assets/svg/Accredit-chea-icon.svg";
 import xila from "../../assets/svg/Accredit-xila-icon.svg";
 import indian from "../../assets/svg/Accredit-indian-icon.svg";
+import wes from "../../assets/svg/wes-icon.svg"
 
 function acreditions() {
+  const { isPopupOpen, togglePopup } = usePopup();
+
   return (
     <div id="acredition" class="accredit-main">
       <div className="accredit-overlay"></div>
@@ -46,7 +50,7 @@ function acreditions() {
                 <img src={chea} alt="" />
               </div>
               <div class="accredit-card">
-                <img src={iao1} alt="" />
+                <img src={wes} alt="" />
               </div>
               <div class="accredit-card">
                 <img src={xila} alt="" />
@@ -85,7 +89,7 @@ function acreditions() {
           <Marquee direction="right">
             <div class="accredit-cards">
               <div class="accredit-card">
-                <img className="accredit-card-img" src={iao1} alt="" />
+                <img className="accredit-card-img" src={wes} alt="" />
               </div>
               <div class="accredit-card">
                 <img className="accredit-card-img" src={usrLazio} alt="" />
@@ -105,11 +109,17 @@ function acreditions() {
             </div>
           </Marquee>
         </div>
-        <ButtonDark
-          duration={2500}
-          containerStyle={{ justifyContent: "center" }}
-        />
-        <Claim_description color="rgba(11, 67, 75, 0.79)" />
+        <div
+            id="NewRootRoot"
+            className="flex flex-row justify-center w-full  our-mba-button"
+          >
+            <a
+             onClick={togglePopup}
+              className="light-effect-button button bg-[#0b434b] w-[95%] sm:w-[539px]  rounded-[56px] sm:rounded-[91px] pt-[25px] pb-[25px] text-[15px] md:text-[15px] xl:text-[23px] font-bold cursor-pointer"
+            >
+              Download Free Brochure
+            </a>
+          </div>
       </div>
       {/* </div> */}
     </div>

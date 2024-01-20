@@ -19,6 +19,7 @@ function popup({ closePopup }) {
   const [isLoading, setIsLoading] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [downloadStarted, setDownloadStarted] = useState(false);
+  const [currentUrl, setCurrentUrl] = useState('');
 
   useEffect(() => {
     // Add delay to active popup animation
@@ -30,6 +31,10 @@ function popup({ closePopup }) {
       clearTimeout(timeout);
     };
   }, []);
+  useEffect(() => {
+    setCurrentUrl(window.location.href);
+  }, []);
+
   const handleExit = () => {
     setIsActive(false);
     setTimeout(() => {
@@ -97,6 +102,11 @@ function popup({ closePopup }) {
     if (validate()) {
       setIsLoading(true);
       const loaderTimeout = setTimeout(() => setIsLoading(false), 3000);
+     
+      const dataToSend = {
+        ...formData,
+        currentUrl: currentUrl
+      };
 
       try {
         const response = await fetch(
@@ -106,7 +116,7 @@ function popup({ closePopup }) {
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify(formData),
+            body: JSON.stringify(dataToSend),
           }
         );
 
